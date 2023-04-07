@@ -19,4 +19,8 @@ class AIResponse:
             stop_sequences=["--"],
         )
         
-        startup_idea = response.generations[0].text
+        returned = response.generations[0].text
+        return returned
+    
+
+
